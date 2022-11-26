@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "accordion/accordion",
+  "title": "Accordion",
+  "category": "text",
+  "icon": "insert",
+  "description": "Adds an accordion block",
+  "keywords": [
+    "accordion",
+    "text"
+  ],
+  "version": "1",
+  "textdomain": "accordion",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./accordion.js",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": "h2"
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "p"
+    },
+    "button": {
+      "type": "string",
+      "source": "text",
+      "selector": "button"
+    }
+  },
+  "style": "file:./index.css"
+}
